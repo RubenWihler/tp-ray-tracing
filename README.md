@@ -37,7 +37,7 @@ Assurez-vous d'avoir un environnement capable de transpiler et servir du TypeScr
 
 1. Clonez le dépôt :
     ```bash
-    git clone git@github.com:RubenWihler/ray-tracing-3d.git
+    git clone git@github.com:RubenWihler/tp-ray-tracing.git
     ```
 
 2. Installez les dépendances :
