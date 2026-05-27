@@ -1,0 +1,17 @@
+{
+  "name": "mon-projet-web",
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./src/client/main.ts --outdir ./public/js",
+    "dev:client": "bun build --watch ./src/client/main.ts --outdir ./public/js",
+    "dev:server": "bun --watch run ./src/server.ts",
+    "start": "bun run build && bun run ./src/server.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
+}

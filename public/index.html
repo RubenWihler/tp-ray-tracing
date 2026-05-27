@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp Projection 3D</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Ray Tracing</h1>
+
+    <main>
+        <div>
+            <canvas id="canva" width="350px" height="350px"></canvas>
+            <div id="lightPos"></div>
+        </div>
+
+        <aside id="controls" style="background-color: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 8px; font-family: sans-serif; max-width: 350px; margin-top: 50px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+            <h3 style="margin-top: 0; border-bottom: 1px solid #7f8c8d; padding-bottom: 5px;">🎮 Contrôles</h3>
+            
+            <p style="margin-bottom: 5px;"><strong>💡 Position de la lumière :</strong></p>
+            <ul style="margin-top: 0; list-style-type: none; padding-left: 10px;">
+                <li><kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">q</kbd> / <kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">w</kbd> : Axe X</li>
+                <li><kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">a</kbd> / <kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">s</kbd> : Axe Y</li>
+                <li><kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">y</kbd> / <kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">x</kbd> : Axe Z</li>
+            </ul>
+
+            <p style="margin-bottom: 5px;"><strong>🧊 Rotation du cube :</strong></p>
+            <ul style="margin-top: 0; list-style-type: none; padding-left: 10px;">
+                <li><kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">d</kbd> / <kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">f</kbd> : Axe X</li>
+                <li><kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">e</kbd> / <kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">r</kbd> : Axe Y</li>
+                <li><kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">c</kbd> / <kbd style="background: #34495e; padding: 2px 5px; border-radius: 3px;">v</kbd> : Axe Z</li>
+                <li style="margin-top: 8px;"><kbd style="background: #e74c3c; padding: 2px 5px; border-radius: 3px;">§</kbd> : Réinitialiser la position</li>
+            </ul>
+        </aside>
+    </main>
+
+    <script src="/js/main.js" type="module"></script>
+</body>
+</html>
